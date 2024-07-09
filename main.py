@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 proxied = FlaskBehindProxy(app) # handles redirects
 
-app.config['SECRET_KEY'] = '9bf26e1d684bc092e43722e46066e1af'
+app.config['SECRET_KEY'] = 'YOUR_SECRET_KEY'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
